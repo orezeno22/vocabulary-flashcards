@@ -233,7 +233,8 @@ main {
         color: rgba(var(--preview-color), 0.5);
     }
 
-    & #definition-preview {
+    & #definition-preview, 
+    & #definition-preview strong {
         font-size: 1.1rem;
         line-height: 1.5rem;
         overflow-wrap: break-word;
@@ -342,7 +343,7 @@ footer {
     box-shadow: 4px 4px var(--main-color);
     position: absolute;
     cursor: pointer;
-    background-color: var(--bg-colorcolor);
+    background-color: var(--bg-color);
     transition: 0.3s;
 }
 
