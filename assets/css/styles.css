@@ -247,7 +247,9 @@ main {
 /* ============================ */
 footer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 
     & a {
         text-underline-offset: 3px;;
@@ -257,6 +259,22 @@ footer {
         font-size: 0.875rem;
         color: rgba(var(--text-color), 0.7);
     }
+}
+
+/* Github icon */
+.footer-icon {
+    width: 19px;
+    height: 19px;
+    fill: currentColor;
+    margin: 5px 0;
+}
+/* Default: show light icon */
+.icon-dark { display: none; }
+.icon-light { display: inline; }
+/* Dark mode: swap */
+@media (prefers-color-scheme: dark) {
+    .icon-dark { display: inline; }
+    .icon-light { display: none; }
 }
 
 /* ============================ */

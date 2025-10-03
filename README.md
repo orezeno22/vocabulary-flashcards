@@ -21,9 +21,9 @@ This flashcard generator is designed for:
 - Supports **Light mode** and **Dark mode**.
 - Clean, responsive layout that works on desktop and mobile.
 
-## Demo
+## Live Demo
 
-Coming soon.
+Click here: [https://vocabulary-flashcards.pages.dev](https://vocabulary-flashcards.pages.dev)
 
 ## Tech Stack
 
