@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vocabulary Flashcards Generator</title>
+        <meta name="description" content="Create and download vocabulary flashcards instantly. Perfect for students, teachers, and language learners. Type a word, pronunciation, meaning, and save it as a beautiful flashcard image.">
+        
+        <link rel="stylesheet" href="/assets/css/styles.css">
+        <link rel="icon" href="/assets/favicon.svg" type="image/x-icon">
+        <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+        <script src="/assets/js/script.js" defer></script>
+
+    </head>
+
+    <body>
+
+        <header>
+            <img
+                src="/assets/favicon.svg"
+                alt="Vocabulary Flashcards Generator logo"
+                class="logo"
+                style="width: 79px; height: 79px; margin: 10px 0;">
+            <h1>Vocabulary Flashcards Generator</h1>
+            <p>Input your word below</p>
+
+            <!-- Light mode switch -->
+            <label class="light-switch">
+                <input
+                    class="toggle"
+                    id="theme-toggle"
+                    type="checkbox"
+                    aria-label="Toggle Dark mode">
+                <span class="slider"></span>
+            </label>
+        </header>
+        
+        <main>
+            <!-- Input Form -->
+            <div class="input-form">
+
+                <!-- Word -->
+                <label for="word-input">Word</label>
+                <input type="text" id="word-input" aria-label="Word" placeholder="e.g., internist" maxlength="50">
+
+                <!-- Pronunciation -->
+                <label for="pronunciation">Pronunciation</label>
+                <input type="text" id="pronunciation-input" aria-label="Pronunciation" placeholder="e.g., /ˈɪntɜrnɪst/" maxlength="100">
+
+                <!-- Word Type -->
+                <label for="type-input">Parts of Speech</label>
+                <select id="type-input" aria-label="Parts of Speech">
+                    <option>noun</option>
+                    <option>verb</option>
+                    <option>adjective</option>
+                    <option>adverb</option>
+                    <option>pronoun</option>
+                    <option>preposition</option>
+                    <option>conjunction</option>
+                    <option>interjection</option>
+                    <option>other</option>
+                </select>
+
+                <!-- Definition -->
+                <label for="definition-input">Definition</label>
+                <p class="definition-desc">Tip: Use <KBD>Ctrl+B</KBD> / <kbd>Cmd+B</kbd> or wrap text in ** to make it <strong>bold</strong>.</p>
+                <textarea
+                    id="definition-input"
+                    rows="5"
+                    aria-label="Definition"
+                    placeholder="A doctor who is a specialist in the treatment of diseases..."
+                    maxlength="500"
+                ></textarea>
+
+                <!-- Download Button -->
+                <button id="download-btn" type="button">Download Flashcard</button>
+            </div>
+
+            <!-- Flashcard Preview -->
+            <div class="preview">
+                <div id="flashcard-preview">
+                    <h2 id="word-preview">Word</h2>
+                    <p id="pronunciation-preview">/pronunciation/</p>
+                    <p id="type-preview">noun</p>
+                    <p id="definition-preview">The meaning of the word will appear here.</p>
+                </div>
+            </div>
+            
+        </main>
+
+        <footer>
+            <p>Made by <a href="https://taihoang.com" target="_blank" rel="noopener">TH</a></p>
+        </footer>
+    </body>
+
+</html>
