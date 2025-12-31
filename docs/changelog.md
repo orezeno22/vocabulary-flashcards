@@ -1,6 +1,10 @@
 # Changelog
 Vocabulary Flashcards Generator
 
+## 1.0.5 - 2025-12-31
+
+ - Removed: Duplicated file.
+
 ## 1.0.4 - 2025-10-05
 
  - Added: Meta tags.

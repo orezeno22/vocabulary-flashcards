@@ -27,9 +27,9 @@ Click here: [https://vocabulary-flashcards.pages.dev](https://vocabulary-flashca
 
 ## Tech Stack
 
-- **HTML5**
-- **CSS3**
-- **JavaScript (Vanilla)**
+- **HTML**
+- **CSS**
+- **JavaScript**
 	- **[html2canvas](https://html2canvas.hertzen.com/)** – to export flashcards as images
 
 ## How It Works
